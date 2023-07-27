@@ -1,3 +1,3 @@
-# IP ASSIGNMENTS
-This repository contains IP Assignment for T.E Information Technology, Vesit Chembur
+# IP ASSIGNMENTS 2
+This repository contains IP Assignment 2 for T.E Information Technology, Vesit Chembur
 
