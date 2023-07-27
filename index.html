@@ -1,52 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My Profile</title>
-</head>
-<body>
-  <table>
-    <tr>
-      <th colspan="2" style="background-color:red;">
-        <h1 title="My profile Page"><center>My Profile Page</center></h1>
-        <h2 style="background-color:red;"><center>This is my profile page. Here you can find my personal details, skill sets, photograph, intro audio, video, etc.</center></h2>
-      </th>
-    </tr>
-    <tr>
-      <td valign="top">
-        <img src="photo.jpg" alt="My photo" align="right" width="160px" height="auto">
-        <h2>Personal Details</h2>
-        <p>
-          <b>Name:</b> Himanshu Menghani<br>
-          <b>Age:</b> 19<br>
-          <b>Address:</b> Ulhasnagar<br>
-          <b>Phone:</b> 7769949282<br>
-          <b>Email:</b> <a href="mailto:2021.himanshu.menghani@ves.ac.in">2021.himanshu.menghani@ves.ac.in</a>
-        </p>
-        <hr>
-        <h2>Skill Sets</h2>
-        <ul>
-          <li>Web development</li>
-          <li>Software development</li>
-          <li>Data science</li>
-          <li>Machine learning</li>
-          <li>Artificial intelligence</li>
-        </ul>
-        <hr>
-        <h2>Intro Audio</h2>
-        <audio controls>
-          <source src="himanshu_audio.mp3" type="audio/mpeg">
-        </audio>
-        <hr>
-        <h2>Video</h2>
-        <video controls width="640" height="360">
-          <source src="intro.mp4" type="video/mp4">
-        </video>
-        <hr>
-        <h2>Links</h2>
-        <b>GitHub:</b> <a href="https://github.com/524himanshu">Himanshu's Github</a><br>
-        <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/himanshu-menghani-926394182">Himanshu's LinkedIn</a><br>
-      </td>
-    </tr>
-  </table>
-</body>
-</html>
+<form action="order.php" method="post">
+  <label for="tagline">Tagline:</label>
+  <input type="text" id="tagline" name="tagline">
+
+  <label for="color">Color:</label>
+  <select id="color" name="color">
+    <option value="black">Black</option>
+    <option value="white">White</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+  </select>
+
+  <label for="size">Size:</label>
+  <select id="size" name="size">
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+    <option value="extra-large">Extra Large</option>
+  </select>
+
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity">
+
+  <label for="date">Delivery date:</label>
+  <input type="date" id="date" name="date">
+
+  <input type="submit" value="Place Order">
+</form>
