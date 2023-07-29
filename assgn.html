@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👕 Creative T-Shirt Order Form 👕</title>
+</head>
+<body>
+    <pre style="text-align: center; font-size: 24px;">
+🌈 Welcome to our creative t-shirts store! 🏵️
+</pre>
+    <form action="/submit_order" method="post" style="text-align: center;">
+        <label for="tagline">Tagline on the Shirt:</label><br>
+        <input type="text" id="tagline" name="tagline" required><br><br>
+
+        <label for="color">Color:</label><br>
+        <input type="text" id="color" name="color" required><br><br>
+
+        <label for="size">Size:</label><br>
+        <select id="size" name="size" required>
+            <option value="" disabled selected>Select Size</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extra Large</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+        <label for="delivery_date">Preferred Delivery Date:</label><br>
+        <input type="date" id="delivery_date" name="delivery_date" required><br><br>
+
+        <label for="other_details">Other Details:</label><br>
+        <textarea id="other_details" name="other_details" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
